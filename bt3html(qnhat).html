@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <title>Form Đăng Ký</title>
+</head>
+<body>
+    <form>
+        <table border="1" cellpadding="5" cellspacing="0">
+            <caption><strong>ĐĂNG KÝ</strong></caption>
+            <tr>
+                <td><label for="fullname">Họ tên</label></td>
+                <td><input type="text" id="fullname" name="fullname" placeholder="Nhập họ tên" /></td>
+            </tr>
+            <tr>
+                <td><label for="username">Username</label></td>
+                <td><input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập" /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Mật khẩu</label></td>
+                <td><input type="password" id="password" name="password" placeholder="Mật khẩu" /></td>
+            </tr>
+            <tr>
+                <td><label for="password-confirm">Nhập lại Mật khẩu</label></td>
+                <td><input type="password" id="password-confirm" name="password-confirm" placeholder="Nhập lại Mật khẩu" /></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" checked />
+                    <label for="male">Nam</label>
+                    <input type="radio" id="female" name="gender" value="female" />
+                    <label for="female">Nữ</label>
+                    <input type="radio" id="other" name="gender" value="other" />
+                    <label for="other">Khác</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="dob-day">Ngày sinh</label></td>
+                <td>
+                    <select id="dob-day" name="dob-day">
+                        <!-- Các option ngày -->
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <!-- Có thể thêm đầy đủ các ngày từ 01 đến 31 -->
+                    </select>
+                    <select id="dob-month" name="dob-month">
+                        <!-- Các option tháng -->
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <!-- Thêm các tháng từ 01 đến 12 -->
+                    </select>
+                    <select id="dob-year" name="dob-year">
+                        <!-- Các option năm -->
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <!-- Thêm năm theo ý muốn -->
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="address">Địa chỉ</label></td>
+                <td><textarea id="address" name="address" rows="5" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="avatar">Avatar</label></td>
+                <td><input type="file" id="avatar" name="avatar" /></td>
+            </tr>
+            <tr>
+                <td>Sở thích</td>
+                <td>
+                    <input type="checkbox" id="watch-movie" name="hobby" value="watch-movie" />
+                    <label for="watch-movie">Xem phim</label>
+                    <input type="checkbox" id="sports" name="hobby" value="sports" />
+                    <label for="sports">Thể thao</label>
+                    <input type="checkbox" id="gaming" name="hobby" value="gaming" />
+                    <label for="gaming">Trò chơi</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Ok" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
